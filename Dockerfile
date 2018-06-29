@@ -18,7 +18,7 @@ RUN groupadd -r www && useradd -s /sbin/nologin -g www -r www && \
     make install
     
 #dir
-RUN mkdir -p /data0/cache_tmp /data0/cache /usr/local/nginx/conf/vhost /usr/local/nginx/conf/cert && \
+RUN mkdir -p /data0/cache_tmp /data0/cache /usr/local/nginx/conf/vhost /usr/local/nginx/conf/cert /var/log/nginx/ && \
     mv /usr/local/nginx/conf/nginx.conf /usr/local/nginx/conf/nginx.conf.bak
 
 #last
