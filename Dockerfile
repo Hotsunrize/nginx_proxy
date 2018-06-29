@@ -24,7 +24,7 @@ RUN mkdir -p /data0/cache_tmp /data0/cache /usr/local/nginx/conf/vhost /usr/loca
 #last
 ADD nginx.conf /usr/local/nginx/conf/nginx.conf
 ADD proxy.conf /usr/local/nginx/conf/vhost/proxy.conf
-ADD 214424760570810.zip /usr/local/nginx/conf/cert/
+ADD ssl.tar.gz /usr/local/nginx/conf/cert/
 
 
 EXPOSE 80 443
